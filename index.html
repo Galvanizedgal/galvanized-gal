@@ -1,111 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galvanized Gal Fabrication</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            pink: '#FF69B4',   // Deep Pink
-                            soft: '#FFF0F5',   // Light Lavender Blush/Pink
-                            accent: '#FFB6C1', // Light Pink
-                            dark: '#4A4A4A'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Quicksand', 'sans-serif'],
-                        display: ['Teko', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-</head>
-<body class="bg-brand-soft text-brand-dark font-sans">
 
-    <nav class="bg-white/80 fixed w-full top-0 z-50 backdrop-blur-sm border-b border-brand-accent">
-        <div class="max-w-6xl mx-auto px-4 h-20 flex justify-between items-center">
-            <span class="font-display text-4xl font-bold tracking-wider text-brand-pink uppercase">
-                Galvanized <span class="text-brand-dark">Gal</span>
-            </span>
-            <div class="hidden md:flex space-x-8">
-                <a href="#shop" class="hover:text-brand-pink transition-colors uppercase tracking-widest text-sm font-bold">Shop</a>
-                <a href="#process" class="hover:text-brand-pink transition-colors uppercase tracking-widest text-sm font-bold">Ordering</a>
-                <a href="#contact" class="hover:text-brand-pink transition-colors uppercase tracking-widest text-sm font-bold">Contact</a>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galvanized Gal Fabrication</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        brand: {
+
+                            pink: '#FF69B4', // Hot pink from logo
+
+                            dark: '#111111',
+
+                            steel: '#1F1F1F',
+
+                            light: '#F5F5F5'
+
+                        }
+
+                    },
+
+                    fontFamily: {
+
+                        sans: ['Inter', 'sans-serif'],
+
+                        display: ['Teko', 'sans-serif'],
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <style>
+
+        ::-webkit-scrollbar { width: 10px; }
+
+        ::-webkit-scrollbar-track { background: #111; }
+
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 5px; }
+
+        ::-webkit-scrollbar-thumb:hover { background: #FF69B4; }
+
+    </style>
+
+</head>
+
+<body class="bg-brand-dark text-brand-light font-sans selection:bg-brand-pink selection:text-white">
+
+
+    <nav class="border-b border-gray-800 bg-brand-dark/95 fixed w-full top-0 z-50 backdrop-blur-sm">
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-20">
+
+                <div class="flex-shrink-0">
+
+                    <span class="font-display text-4xl font-bold tracking-wider text-white uppercase">
+
+                        Galvanized <span class="text-brand-pink">Gal</span>
+
+                    </span>
+
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+
+                    <a href="#shop" class="text-gray-300 hover:text-brand-pink transition-colors uppercase tracking-widest text-sm font-bold">Shop Crosses</a>
+
+                    <a href="#process" class="text-gray-300 hover:text-brand-pink transition-colors uppercase tracking-widest text-sm font-bold">How to Order</a>
+
+                    <a href="#contact" class="text-gray-300 hover:text-brand-pink transition-colors uppercase tracking-widest text-sm font-bold">Contact</a>
+
+                </div>
+
             </div>
+
         </div>
+
     </nav>
 
-    <div class="relative pt-40 pb-20 text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="mx-auto w-64 h-64 mb-8 rounded-full border-4 border-brand-pink overflow-hidden bg-white shadow-lg">
-                <img src="KennedyLogo2.jpg" alt="Logo" class="w-full h-full object-contain p-4">
+
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+
+        <div class="absolute inset-0 z-0 opacity-10">
+
+            <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#333_1px,transparent_1px)] [background-size:20px_20px]"></div>
+
+        </div>
+
+        
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+
+            <div class="mx-auto w-64 h-64 md:w-80 md:h-80 mb-8 relative group">
+
+                <div class="absolute inset-0 bg-brand-pink opacity-20 blur-xl rounded-full group-hover:opacity-40 transition-opacity duration-500"></div>
+
+                
+
+                <img src="KennedyLogo2.jpg" alt="Galvanized Gal Logo" class="relative w-full h-full object-contain drop-shadow-2xl mix-blend-screen invert">
+
+                
+
             </div>
+
             
-            <h1 class="text-6xl md:text-8xl font-display font-bold text-brand-dark mb-4 uppercase">
-                Custom <span class="text-brand-pink">Metal</span> Art
+
+            <h1 class="text-6xl md:text-8xl font-display font-bold text-white mb-4 uppercase tracking-tighter">
+
+                Custom <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink to-purple-500">Metal</span> Art
+
             </h1>
-            <p class="text-xl text-gray-600 font-medium italic">
-                Welder. Fabricator. Creator.
+
+            <p class="mt-4 text-xl text-gray-400 max-w-2xl mx-auto font-light">
+
+                Welder. Fabricator. Creator.<br>
+
+                <span class="text-brand-pink font-bold">BUILT TO LAST. BORN TO SHINE.</span>
+
             </p>
+
             <div class="mt-10">
-                <a href="#shop" class="px-8 py-4 bg-brand-pink text-white rounded-full font-bold uppercase tracking-widest hover:bg-brand-dark transition-all shadow-md">
+
+                <a href="#shop" class="inline-block px-8 py-4 border-2 border-brand-pink text-brand-pink font-bold uppercase tracking-widest hover:bg-brand-pink hover:text-white transition-all duration-300">
+
                     View Collection
+
                 </a>
+
             </div>
+
         </div>
+
     </div>
 
-    <div id="shop" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
+
+    <div id="shop" class="bg-brand-steel py-20 border-t border-gray-800">
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-brand-dark uppercase">Available Crosses</h2>
-                <div class="w-24 h-1 bg-brand-pink mx-auto mt-2 rounded-full"></div>
+
+                <h2 class="text-4xl font-display font-bold text-white uppercase tracking-wider">Available Crosses</h2>
+
+                <div class="w-24 h-1 bg-brand-pink mx-auto mt-4"></div>
+
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center group">
-                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-brand-soft group-hover:border-brand-pink transition-all duration-500 shadow-xl">
-                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+1" alt="Classic Steel" class="w-full h-full object-cover">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="group relative bg-brand-dark border border-gray-800 hover:border-brand-pink transition-all duration-300">
+
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
+
+                        <img src="https://placehold.co/600x600/2a2a2a/FF69B4?text=Metal+Cross+1" alt="Metal Cross" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+
                     </div>
-                    <h3 class="mt-6 text-2xl font-display font-bold text-brand-dark">Classic Steel</h3>
-                    <p class="text-brand-pink font-bold">$45.00</p>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-display font-bold text-white mb-2">Classic Steel Cross</h3>
+
+                        <p class="text-gray-400 text-sm mb-4">Hand-welded mild steel with clear coat finish.</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <span class="text-xl font-bold text-brand-pink">$45.00</span>
+
+                            <span class="text-xs text-gray-500 uppercase tracking-wide">In Stock</span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="text-center group">
-                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-brand-soft group-hover:border-brand-pink transition-all duration-500 shadow-xl">
-                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+2" alt="Industrial Bolt" class="w-full h-full object-cover">
+
+                <div class="group relative bg-brand-dark border border-gray-800 hover:border-brand-pink transition-all duration-300">
+
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
+
+                        <img src="https://placehold.co/600x600/2a2a2a/FF69B4?text=Metal+Cross+2" alt="Metal Cross" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+
                     </div>
-                    <h3 class="mt-6 text-2xl font-display font-bold text-brand-dark">Industrial Bolt</h3>
-                    <p class="text-brand-pink font-bold">$55.00</p>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-display font-bold text-white mb-2">Industrial Bolt Cross</h3>
+
+                        <p class="text-gray-400 text-sm mb-4">Heavy duty construction with industrial bolt accents.</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <span class="text-xl font-bold text-brand-pink">$55.00</span>
+
+                            <span class="text-xs text-gray-500 uppercase tracking-wide">Made to Order</span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="text-center group">
-                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-brand-soft group-hover:border-brand-pink transition-all duration-500 shadow-xl">
-                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+3" alt="Patina Finish" class="w-full h-full object-cover">
+
+                <div class="group relative bg-brand-dark border border-gray-800 hover:border-brand-pink transition-all duration-300">
+
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-900">
+
+                        <img src="https://placehold.co/600x600/2a2a2a/FF69B4?text=Metal+Cross+3" alt="Metal Cross" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+
                     </div>
-                    <h3 class="mt-6 text-2xl font-display font-bold text-brand-dark">Patina Finish</h3>
-                    <p class="text-brand-pink font-bold">$60.00</p>
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-display font-bold text-white mb-2">Patina Finish Cross</h3>
+
+                        <p class="text-gray-400 text-sm mb-4">Unique rustic patina finish. No two are alike.</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <span class="text-xl font-bold text-brand-pink">$60.00</span>
+
+                            <span class="text-xs text-gray-500 uppercase tracking-wide">Low Stock</span>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
 
-    <footer id="contact" class="bg-brand-soft py-12 border-t border-brand-accent text-center">
-        <h2 class="text-3xl font-display font-bold text-brand-dark mb-6 uppercase">Get in Touch</h2>
-        <a href="mailto:galvanizedgalfabrication@gmail.com" class="text-lg text-brand-pink font-bold hover:underline">
-            galvanizedgalfabrication@gmail.com
-        </a>
-        <div class="mt-8 text-gray-500 text-sm">
-            &copy; 2024 Galvanized Gal Fabrication
+
+    <div id="process" class="py-20 bg-brand-dark relative overflow-hidden">
+
+        <div class="absolute left-0 top-0 w-2 h-full bg-brand-pink"></div>
+
+        
+
+        <div class="max-w-5xl mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                
+
+                <div>
+
+                    <h2 class="text-4xl font-display font-bold text-white uppercase tracking-wider mb-8">How to Buy</h2>
+
+                    
+
+                    <div class="space-y-8">
+
+                        <div class="flex">
+
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 border-2 border-brand-pink text-brand-pink font-bold text-xl">1</div>
+
+                            <div class="ml-4">
+
+                                <h3 class="text-xl font-bold text-white">Choose Your Cross</h3>
+
+                                <p class="text-gray-400">Pick the style you want from the collection above.</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex">
+
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 border-2 border-brand-pink text-brand-pink font-bold text-xl">2</div>
+
+                            <div class="ml-4">
+
+                                <h3 class="text-xl font-bold text-white">Scan to Pay</h3>
+
+                                <p class="text-gray-400">Open your banking app and scan the Zelle code. Or manually send payment to the email below.</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex">
+
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 border-2 border-brand-pink text-brand-pink font-bold text-xl">3</div>
+
+                            <div class="ml-4">
+
+                                <h3 class="text-xl font-bold text-white">Confirm Order</h3>
+
+                                <p class="text-gray-400">In the payment notes (or via email), include your <strong>Shipping Address</strong> and <strong>Cross Style</strong>.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bg-white p-1 rounded-lg shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
+
+                    <div class="bg-brand-steel p-8 text-center border border-gray-700">
+
+                        <h3 class="text-2xl font-bold text-white mb-6 uppercase tracking-widest">Pay with Zelle</h3>
+
+                        
+
+                        <div class="bg-white p-4 mx-auto max-w-[200px] mb-6">
+
+                            <img src="https://placehold.co/200x200/ffffff/000000?text=QR+CODE+COMING+SOON" alt="Zelle QR Code" class="w-full">
+
+                        </div>
+
+
+                        <div class="text-gray-400 text-sm mb-2">Or send to:</div>
+
+                        <div class="text-brand-pink font-mono text-lg break-all font-bold">
+
+                            galvanizedgalfabrication@gmail.com
+
+                        </div>
+
+                        <div class="text-gray-500 text-xs mt-4">Kennedy Hamilton</div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </div>
+
+    </div>
+
+
+    <footer id="contact" class="bg-black py-12 border-t border-gray-900">
+
+        <div class="max-w-6xl mx-auto px-4 text-center">
+
+            <h2 class="text-3xl font-display font-bold text-white mb-8 uppercase">Get in Touch</h2>
+
+            
+
+            <a href="mailto:galvanizedgalfabrication@gmail.com" class="inline-flex items-center text-xl text-gray-300 hover:text-brand-pink transition-colors">
+
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+
+                galvanizedgalfabrication@gmail.com
+
+            </a>
+
+
+            <div class="mt-12 text-gray-600 text-sm">
+
+                &copy; 2024 Galvanized Gal Fabrication. All rights reserved.<br>
+
+                <span class="text-gray-800">Built for tough jobs.</span>
+
+            </div>
+
+        </div>
+
     </footer>
 
+
 </body>
+
 </html>
