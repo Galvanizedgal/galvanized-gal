@@ -12,10 +12,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            pink: '#FF69B4',   // Bold pink for accents
-                            soft: '#FFF0F5',   // Light Lavender Blush/Pink background
-                            accent: '#FFB6C1', // Medium pink for borders
-                            dark: '#4A4A4A'    // Grey for readability
+                            pink: '#FF69B4',   // Hot pink from your logo
+                            soft: '#FFF0F5',   // The Light Pink background color
+                            accent: '#FFB6C1', // Soft pink border accent
+                            dark: '#4A4A4A'    // Easy-to-read text color
                         }
                     },
                     fontFamily: {
@@ -27,9 +27,9 @@
         }
     </script>
 </head>
-<body class="bg-brand-soft text-brand-dark font-sans">
+<body class="bg-brand-soft text-brand-dark font-sans selection:bg-brand-pink selection:text-white">
 
-    <nav class="bg-white/80 fixed w-full top-0 z-50 backdrop-blur-sm border-b border-brand-accent">
+    <nav class="bg-white/90 fixed w-full top-0 z-50 backdrop-blur-sm border-b border-brand-accent">
         <div class="max-w-6xl mx-auto px-4 h-20 flex justify-between items-center">
             <span class="font-display text-4xl font-bold tracking-wider text-brand-pink uppercase">
                 Galvanized <span class="text-brand-dark">Gal</span>
@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <div class="relative pt-40 pb-20 text-center bg-brand-soft">
+    <div class="relative pt-40 pb-20 text-center">
         <div class="max-w-4xl mx-auto px-4">
             <div class="mx-auto w-64 h-64 mb-8 rounded-full border-4 border-brand-pink overflow-hidden bg-white shadow-lg flex items-center justify-center">
                 <img src="KennedyLogo2.jpg" alt="Logo" class="w-full h-full object-contain p-4">
@@ -62,14 +62,50 @@
         </div>
     </div>
 
-    <div id="shop" class="py-20 bg-white">
+    <div id="shop" class="py-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-brand-dark uppercase">Available Crosses</h2>
+                <h2 class="text-4xl font-display font-bold text-brand-dark uppercase tracking-wider">Available Crosses</h2>
                 <div class="w-24 h-1 bg-brand-pink mx-auto mt-2 rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div class="text-center group">
-                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-brand-soft group-hover:border-brand-pink transition-all duration-500 shadow-xl">
-                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+1" alt="
+                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-white group-hover:border-brand-pink transition-all duration-500 shadow-xl">
+                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+1" alt="Classic Steel" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-6 text-2xl font-display font-bold text-brand-dark">Classic Steel</h3>
+                    <p class="text-brand-pink font-bold">$45.00</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-white group-hover:border-brand-pink transition-all duration-500 shadow-xl">
+                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+2" alt="Industrial Bolt" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-6 text-2xl font-display font-bold text-brand-dark">Industrial Bolt</h3>
+                    <p class="text-brand-pink font-bold">$55.00</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-white group-hover:border-brand-pink transition-all duration-500 shadow-xl">
+                        <img src="https://placehold.co/600x600/FFB6C1/ffffff?text=Cross+3" alt="Patina Finish" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-6 text-2xl font-display font-bold text-brand-dark">Patina Finish</h3>
+                    <p class="text-brand-pink font-bold">$60.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="py-12 border-t border-brand-accent text-center">
+        <h2 class="text-3xl font-display font-bold text-brand-dark mb-6 uppercase">Get in Touch</h2>
+        <a href="mailto:galvanizedgalfabrication@gmail.com" class="text-lg text-brand-pink font-bold hover:underline">
+            galvanizedgalfabrication@gmail.com
+        </a>
+        <div class="mt-8 text-gray-500 text-sm">
+            &copy; 2024 Galvanized Gal Fabrication
+        </div>
+    </footer>
+
+</body>
+</html>
